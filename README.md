@@ -1,4 +1,4 @@
-# Dijkstra-s-algorithm
+# Dijkstra's algorithm
 
 Name: Tushar Vijay Nemade Student Id: 801257370
 
