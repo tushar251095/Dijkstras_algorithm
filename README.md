@@ -79,7 +79,6 @@ This function removes the edge from the graph, that is the edge no longer exists
 This function is used to find the reachable vertices from the given vertices and print them.
 
 **Compiler Details:**
-
 Compiler: javac. Version:  11.0.11
 
 **Command to compile:** javac Project1.java  after execution creates all .class files. **Command to run:** java Project1 inputfile.txt
@@ -88,54 +87,10 @@ Compiler: javac. Version:  11.0.11
 
 - **HashMap:** It is used to store the vertices and its details.
 - **TreeMap:** It is used to print the vertices alphabetically in graphprint function. As TreeMap store keys in sorted order. Has overridden its sort function using comparator as ordering is done on variables inside the object.
-
-Name: Tushar Vijay Nemade Student Id: 801257370
-
 - **Treeset:** It is also used to print vertices alphabetically in the printReachable function. The treeset also stores values in sorted order.
 - **Linked list:** It is used to store the adjacent vertices of the vertex and details of adjacent vertices. That is the details of the edges of the graph
 - **Priority Queue:** It is used to implement the dijkstra's algorithm. It is used to find the shortest weight vertex in the queue.
 
-**Reachable Algorithm:**
-
-**Complexity: O(V + E)**
-
-reachableVertices(v)
-
-Foreach vertex in v.adjacancyList
-
-If vertex.dest.status not down
-
-Continue
-
-If edge not down
-
-Continue
-
-If vertex.dest.color==”white”
-
-Add vertex.dest to reachableMap
-
-vertex.dest.color=”black”
-
-reachableVertices(vertex.dest)
-
-**Complexity: O(V \*(V + E))**
-
-printReachable()
-
-For Each vertex in vertexMap
-
-Add vertex to treemap
-
-Foreach vertex in treemap
-
-If vertex NOT down
-
-then reachableVertices(vertex)
-
-Print treeset
-
-Clear treeset
 
 **Time complexity:**
 
